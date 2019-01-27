@@ -31,4 +31,6 @@
 /usr/bin/groupadd-user media_rw || :\
 %{nil}
 
+%define makefstab_skip_entries /dev/cpuctl
+
 %include rpm/dhd/droid-hal-device.inc
